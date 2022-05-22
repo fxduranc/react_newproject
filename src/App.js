@@ -1,12 +1,12 @@
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import NavBar from './Components/NavBar/NavBar';
-import Header from './Components/Header/Header';
 
 
 function App() {
   return (
     <div className="Container">
-      <Header />
       <NavBar />
+      <ItemListContainer />
     </div>
   );
 }
