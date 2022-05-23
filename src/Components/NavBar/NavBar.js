@@ -6,7 +6,6 @@ export default function NavBar() {
     return (
         <Navbar bg="light" expand="lg">
             <Container fluid>
-
                 <Navbar.Brand href="#">ALL FASHION</Navbar.Brand>
                 <Nav
                     className="me-auto my-2 my-lg-0 justify"
@@ -27,7 +26,7 @@ export default function NavBar() {
                     />
                     <Button variant="outline-success">Buscar</Button>
                 </Form>
-                            </Container>
+            </Container>
         </Navbar>
     );
 
