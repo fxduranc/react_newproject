@@ -1,3 +1,4 @@
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import NavBar from './Components/NavBar/NavBar';
 
@@ -6,7 +7,8 @@ function App() {
   return (
     <div className="Container">
       <NavBar />
-      <ItemListContainer greeting={"Aquí se mostrarán los productos"} />
+      <ItemListContainer greeting={"Todo para tu Oufit"} />
+      <ItemDetailContainer />
     </div>
   );
 }
