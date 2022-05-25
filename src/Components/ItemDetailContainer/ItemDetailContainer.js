@@ -2,10 +2,11 @@ import React from "react"
 import { products } from "../Data/Productos"
 import { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import NavBar from "../NavBar/NavBar";
 
 export default function ItemDetailContainer() {
-    const [product, setProduct] = useState([])
-    const getItem = new Promise((resolve, reject) => {
+    const [items, setItems] = useState([])
+    const getItems = new Promise((resolve, reject) => {
         let condition = true
         setTimeout(() => {
             if (condition) {
@@ -17,16 +18,17 @@ export default function ItemDetailContainer() {
     })
 
     useEffect(() => {
-        getItem
-            .then((result) => setProduct(result))
+        getItems
+            .then((result) => setItems(result))
             .catch((error) => console.log(error))
     }, [])
 
-    console.log(product) 
+    console.log(items) 
     return (
         <div>
-            <ItemDetail product={product} />         
+            <ItemDetail items={items} />     
         </div>
+         
     );
-
+    
 }
